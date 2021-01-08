@@ -3,4 +3,5 @@
 <p> <strong>Directions: </strong><%= @recipe.directions%> </p>
 <p> <strong>Ingredients: </strong><%= @recipe.ingredients%> </p>
 <br><br>
-<a href="/users/<%=current_user.id%>">Return to your homepage</a>
+
+<%= link_to "Return to your homepage", user_path(@user)%>
